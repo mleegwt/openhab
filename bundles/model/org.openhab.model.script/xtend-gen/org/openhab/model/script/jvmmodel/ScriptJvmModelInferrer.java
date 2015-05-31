@@ -1,17 +1,9 @@
-/**
- * Copyright (c) 2010-2015, openHAB.org and others.
- *
- * All rights reserved. This program and the accompanying materials
- * are made available under the terms of the Eclipse Public License v1.0
- * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html
- */
 package org.openhab.model.script.jvmmodel;
 
-import com.google.inject.Inject;
 import org.eclipse.xtext.naming.IQualifiedNameProvider;
 import org.eclipse.xtext.xbase.jvmmodel.AbstractModelInferrer;
 import org.eclipse.xtext.xbase.jvmmodel.JvmTypesBuilder;
+import org.eclipse.xtext.xbase.lib.Extension;
 
 /**
  * <p>Infers a JVM model from the source model.</p>
@@ -24,9 +16,9 @@ public class ScriptJvmModelInferrer extends AbstractModelInferrer {
   /**
    * conveninence API to build and initialize JvmTypes and their members.
    */
-  @Inject
+  /* @Inject */@Extension
   private JvmTypesBuilder _jvmTypesBuilder;
   
-  @Inject
+  /* @Inject */@Extension
   private IQualifiedNameProvider _iQualifiedNameProvider;
 }

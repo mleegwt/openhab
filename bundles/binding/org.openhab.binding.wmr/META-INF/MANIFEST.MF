@@ -21,4 +21,3 @@ Service-Component: OSGI-INF/wmrbinding.xml, OSGI-INF/genericbindingprovider.xml
 Bundle-ClassPath: .,
  lib/hid-1.0.1-20130115.205004-2.jar
 Bundle-ActivationPolicy: lazy
-Export-Package: org.openhab.binding.wmr
